@@ -1,0 +1,649 @@
+/*
+ * Global panel styles
+ */
+.panel_left {
+  background: url("../images/left_bg.png") repeat !important;
+}
+
+.rowLabel {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/*
+ * Sencha overrides
+ */
+
+strong {
+  /* Sencha overrides the strong tag */
+  font-weight: bold !important;  
+}
+/* Give list items their colour & background */
+.x-list .x-list-item.x-item-selected{
+  color: white !important;
+  text-shadow: rgba(0, 0, 0, 0) 0 -0.08em 0 !important;
+}
+
+.wideList { 
+  width: 95%;
+}
+.x-list-item.x-item-selected {
+  background-image: -webkit-gradient(
+       linear,
+      left bottom,
+      left top,
+      color-stop(0.14, rgb(51,153,204)),
+      color-stop(0.57, rgb(54,194,229))
+  ) !important;
+  color: white !important;  
+}
+
+.x-toolbar-dark {
+  background-color: #232323 !important;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #313131), color-stop(50%, #242424), color-stop(51%, #222222), color-stop(100%, #101010)) !important;
+  background-image: linear-gradient(#313131,#242424 50%,#222222 51%,#101010) !important;
+  border-color: black !important;
+}
+
+.x-floating.x-panel, .x-floating.x-carousel {
+  /*background-color: #f0f1f1 !important;*/
+  background-color: #000000 !important;
+}
+
+/* Get rid of blue styling, make it grey */
+.subToolbar .x-button, .subToolbar .x-button.x-button-back::after, .subToolbar .x-button.x-button-forward::after, .x-toolbar .subToolbar .x-button, .x-toolbar .subToolbar .x-button.x-button-back::after, .x-toolbar .subToolbar .x-button.x-button-forward::after, .subToolbar .x-field-select .x-input-text, .subToolbar .x-field-select .x-input-text.x-button-back::after, .subToolbar .x-field-select .x-input-text.x-button-forward::after, .x-toolbar .subToolbar .x-field-select .x-input-text, .x-toolbar .subToolbar .x-field-select .x-input-text.x-button-back::after, .x-toolbar .subToolbar .x-field-select .x-input-text.x-button-forward::after, .subToolbar .x-field-select::before, .subToolbar .x-field-select::before.x-button-back::after, .subToolbar .x-field-select::before.x-button-forward::after, .x-toolbar .subToolbar .x-field-select::before, .x-toolbar .subToolbar .x-field-select::before.x-button-back::after, .x-toolbar .subToolbar .x-field-select::before.x-button-forward::after {
+  background-color: #fff !important;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, white), color-stop(50%, #FEFEFE), color-stop(51%, #DFDFDF), color-stop(100%, #F0F3F2)) !important;
+  background-image: linear-gradient(#fff,#FEFEFE 10%,#DFDFDF 65%,#F0F3F2) !important;
+  color: #000 !important;
+  text-shadow: none !important;
+  font-weight: normal !important;
+}
+
+.subToolbar .x-button.x-button-pressed, .subToolbar .x-button.x-button-pressed::after, .subToolbar .x-button.x-button-active, .subToolbar .x-button.x-button-active::after, .x-toolbar .subToolbar .x-button.x-button-pressed, .x-toolbar .subToolbar .x-button.x-button-pressed::after, .x-toolbar .subToolbar .x-button.x-button-active, .x-toolbar .subToolbar .x-button.x-button-active::after, .subToolbar .x-field-select .x-input-text.x-button-pressed, .subToolbar .x-field-select .x-input-text.x-button-pressed::after, .subToolbar .x-field-select .x-input-text.x-button-active, .subToolbar .x-field-select .x-input-text.x-button-active::after, .x-toolbar .subToolbar .x-field-select .x-input-text.x-button-pressed, .x-toolbar .subToolbar .x-field-select .x-input-text.x-button-pressed::after, .x-toolbar .subToolbar .x-field-select .x-input-text.x-button-active, .x-toolbar .subToolbar .x-field-select .x-input-text.x-button-active::after, .subToolbar .x-field-select::before.x-button-pressed, .subToolbar .x-field-select::before.x-button-pressed::after, .subToolbar .x-field-select::before.x-button-active, .subToolbar .x-field-select::before.x-button-active::after, .x-toolbar .subToolbar .x-field-select::before.x-button-pressed, .x-toolbar .subToolbar .x-field-select::before.x-button-pressed::after, .x-toolbar .subToolbar .x-field-select::before.x-button-active, .x-toolbar .subToolbar .x-field-select::before.x-button-active::after{
+/*
+ * 747579 to 8b8c8f
+ */  
+ background-color: #fff !important;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #747579), color-stop(50%, #747579), color-stop(51%, #8b8c8f), color-stop(100%, #8b8c8f)) !important;
+  background-image: linear-gradient(#fff,#FEFEFE 10%,#DFDFDF 65%,#F0F3F2) !important;
+  color: #fff !important;
+  text-shadow: none !important;
+  font-weight: normal !important;
+}
+
+/* List item arrows on the body */
+.x-list-item .list_arrow{
+  background: transparent url("../images/list_arrow.png") center center no-repeat;
+  background-position: 0 0;
+  float: right;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+}
+.x-list-item.x-item-selected .folder .list_arrow {
+  background-position: 0 -96px !important; /* Should be -100 but tweak -4px */
+}
+
+
+#panel_profile_details strong {
+  font-weight: bolder !important;
+}
+
+.panel_right {
+  background-color: #d4d8dd;
+}
+
+.panel_right .x-list {
+  background-color: #fff !important;
+  border-radius: 10px !important;
+  -webkit-box-shadow: inset 0 0 4px #666;
+}
+
+.panel_right .x-list, .panel_right .licencesHeader{
+  margin: 12px;  
+}
+
+.news_summary .x-list, .x-list .news_summary, .newsPanelBody .x-list {
+  background-color: transparent !important;
+}
+
+.panel_left .newsSumary, .panel_left .my_profile  {
+  color: #fff !important;
+}
+
+.panel_left .newsSumary, .panel_left .my_profile, .panel_left #licence_folders {
+  color: #fff !important;
+  top :-2px;
+}
+
+.x-toolbar-title {
+  padding-left: 14px; 
+}
+
+/* 
+ * Login.js styles
+ */
+#app_form_login .x-form-fieldset-title {
+  color: #fff;
+  text-shadow: none;
+}
+
+#app_form_login {
+  margin: 0 auto !important;
+  width: 100%;
+  height: 100%;
+}
+#app_login, #app_form_login {
+  background: #706f73 url("../images/login_bg.png") center center no-repeat;
+  
+}
+#app_form_login .x-panel-body { 
+  background-color: transparent;
+}
+#app_login, #app_login .x-form-fieldset .x-panel-body {
+  border: 0px !important;
+  -webkit-box-shadow: none !important;
+}
+#app_login_error strong { 
+  color: red;
+}
+#app_login .app_login_title {
+  color: #fff;
+  background: url("../images/login_logo.png") center center no-repeat;
+}
+
+/*
+ * News Summary Widget CSS
+ */
+.myprofile .panel_left .x-toolbar-title, .newsPanelToolbar .x-toolbar-title{
+	padding-top: 2px;
+	font-size: 1.1em;
+	
+}
+
+.panel_left .newsPanel .profile_arrow{
+	background: url("../images/blue_arrows.png") no-repeat;	
+	background-position: 0px -100px;
+}
+
+.panel_left .newsPanel.expanded .profile_arrow{
+	background-position: 0px 0px !important;
+}
+.newsSumary h2 {
+	font-weight: bold;
+}
+
+.newsSumary p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:normal;
+	height: 70px;
+}
+
+.newsPanel .more {
+	background: transparent url("../images/more_button.png") no-repeat !important;
+	border: 0px !important;
+	border-top-color: transparent !important;
+	text-shadow: 0px !important;
+}
+
+#newsItemBody {
+	background: #fff !important;	
+}
+
+/*
+ * News.js CSS
+ */
+.newsItemToolbar .x-toolbar-title{
+	margin-left: 30px;
+}
+/*
+ * css for profile.js
+ */
+#profileRight {
+ background-color: #D4D8DD; 
+}
+
+#profileRight .transparentList .x-list, #profileRight .transparentList .x-list-item {
+  background-color: transparent !important; 
+  -webkit-box-shadow: none !important;
+  border-radius: 0px;
+}
+
+#profileRight .x-form-fieldset .x-panel-body {
+	-webkit-box-shadow: none !important;
+	border: 0px !important;
+}
+
+
+.listItem {
+  background-color: #EEE;
+  margin-bottom:-5px;
+}
+
+.userDetailList1 {
+  margin-left:15px;  
+  float: left;
+}
+
+.userDetailList2 {
+  margin-right:20px; 
+  float: right;
+}
+
+#userDetailsTab {
+  border: none;
+  width:97%;
+  margin-left:1px; 
+}
+#userDetailsTab1{
+  border: none;
+  width:97%;
+/*  margin-left:40px;  removed by Cian - causes runoff on pads*/
+}
+.roundPanel{
+    -webkit-border-radius:10px;
+    border-radius:10px;
+} 
+.txtColor{
+   color:grey;
+   float: right;
+}
+
+#supportDetails, #supportDetails a, #supportDetails a:visited, #supportDetails a:hover, #supportDetails a:active {
+	color: yellow;
+	text-decoration: none;
+}
+#supportDetails strong {
+	color: #fff;
+}
+.eaRow img{
+	float: right;
+	padding-top: 5px;
+}
+
+.eaRow i {
+	float: right;
+	padding: 4px 20px 0 0;
+	color: grey;
+}
+
+
+/*
+ * licences.js styling
+ */
+.folder {
+	height: 28px;
+}
+
+.licence_folder .rowLabel {
+	width: 150px;
+	font-weight: strong;
+	float: left;
+	
+}
+
+.eaSelector .x-form-label {
+	padding: 0em !important;
+	margin: 0px !important;
+	background: transparent !important;
+	border: 0px !important;
+	width: auto !important;
+}
+
+/*
+ * licencedetails.js styling
+ */
+.licenceDetailsRow {
+  width: 100%;
+  padding: 12px 0 0 45px;
+  font-size: 0.8em;
+}
+.licenceDetailsRow strong.licenceNotes{
+  color : #3399cc;
+  margin-left: -50px; 
+}
+
+.licenceDetailsRow li, .licenceDetailsRow p {
+  color: #999;
+}
+
+.licenceDetailsRow p{
+  display: inline;
+}
+
+.licenceDetailsRow ul {
+  list-style: none;
+  border-top: 2px dashed #999;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 0 10px 0;
+}
+.licenceDetailsRow ul li {
+  display: inline-block;
+  float: left;
+  width: 25%;
+}
+
+.licenceDetailsRow li strong {
+  color: #000;
+}
+
+#productLicencesToolbar .x-toolbar-title {
+  margin-left: 175px;
+}
+
+/*
+ * usersaccess.js styling
+ */
+.usersaccess .panel_left {
+  background: #ededed !important;
+}
+.usersaccess .panel_right {
+ background: #d4d8de !important;
+ }
+.usersaccess .panel_right .mail_icon, .usersaccess .panel_left .mail_icon{
+	float: right;
+	padding-top: 6px;
+}
+.usersaccess .panel_left .x-toolbar-dark, .usersaccess .panel_right .x-toolbar-dark {
+  background: transparent !important;
+}
+.usersaccess .panel_right .folder {
+  width: 100%;
+}
+.usersaccess .panel_right .licence_folder .permissions {
+	width: 130px;
+}
+.usersaccess .panel_right .licence_folder .otherusers {
+	width: 135px;
+}
+
+#byUsersFolderList .rowLabel {
+	width: 300px;	
+}
+
+#byFoldersFolderList .rowLabel {
+	width: 200px;	
+}
+
+.usersaccess .panel_right .licence_folder .permissions, .usersaccess .panel_right .licence_folder .otherusers,
+.usersaccess .panel_right .licence_folder .permissions a:link, .usersaccess .panel_right .licence_folder .otherusers a:link,
+.usersaccess .panel_right .licence_folder .permissions a:visited, .usersaccess .panel_right .licence_folder .otherusers a:visited,
+.usersaccess .panel_right .licence_folder .permissions a:active, .usersaccess .panel_right .licence_folder .otherusers a:active {
+  font-weight: normal;
+  font-size: 0.85em;
+  float: right;
+  color: #ccc;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 15px;
+  overflow: hidden;
+}
+span.permissions, span.otherusers {
+	white-space: nowrap;
+}
+
+.userRow span.permissions, .userRow span.otherusers, .userRow span.mail_icon {
+	float: right;	
+	padding-right: 30px;
+}
+
+.userRow span.permissions a, .userRow span.permissions a:link, .userRow span.permissions a:visited, .userRow span.permissions a:hover, .userRow span.permissions a:active {
+	color: #ccc;
+	font-size: 0.85em;
+	padding-left: 15px;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.usersaccess .panel_right .licence_folder .permissions a:link, .usersaccess .panel_right .licence_folder .otherusers a:link,
+.usersaccess .panel_right .licence_folder .permissions a:visited, .usersaccess .panel_right .licence_folder .otherusers a:visited,
+.usersaccess .panel_right .licence_folder .permissions a:active, .usersaccess .panel_right .licence_folder .otherusers a:active {
+	display: inline;
+}
+.usersaccess .panel_right .otherusers img, .usersaccess .panel_right .permissions img {
+  margin-right: 10px;
+}
+.usersaccess .panel_right .licence_folder .permissions {
+  background: transparent url('') no-repeat;
+}
+.usersaccess .panel_right .licence_folder .otherusers {
+  background: transparent url('') no-repeat;
+}  
+.usersaccess .panel_right .licence_folder strong, .usersaccess .panel_right .subfolder strong { /* The folder name is strong */
+  width: 250px;
+  display: inline-block;
+  overflow: hidden; 
+}
+.usersaccess .panel_right .userRow {
+	padding-left: 30px;
+	width: 100%;
+	background: transparent url('../images/accesstick.png') no-repeat;
+	background-position: 0px -100px; 
+}
+.usersaccess .panel_right .userRow.member {
+	background-position: 0px 0px; 
+}
+
+.usersaccess .panel_left .userRow img {
+	float: right;
+}
+
+#setPermissionsForm .x-panel-body, #permissionsSummary .x-panel-body {
+	background: #fff !important;
+}
+
+#permissions_panel, #permissions_panel2 {
+	padding-bottom: 10px !important;
+}
+
+#grantPerms.x-item-disabled, #revokePerms.x-item-disabled, #editPerms.x-item-disabled {
+	background-color: #b3b6bb;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d2d3d5), color-stop(50%, #d2d3d5), color-stop(51%, #babdbf), color-stop(100%, #babdbf));
+	background-image: linear-gradient(#d2d3d5,#d2d3d5 50%,#babdbf 51%,#babdbf);
+	border: 0.1em solid #666;
+	border-top-color: #666;
+}
+
+
+/*FIXME: Probably not required. */
+.x-segmentedbutton .x-button {
+  background-color: #3D4E63;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2A3544), color-stop(10%, #344153), color-stop(65%, #3D4E63), color-stop(100%, #3E4F65));
+  background-image: linear-gradient(#2A3544,#344153 10%,#3D4E63 65%,#3E4F65);
+}
+
+/*
+ * News styling
+ */
+.panel_right .news_list h1 {
+  color: #333 !important;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-bottom: 2px solid #CCC;
+}
+.panel_right .news_list img{
+  float: left;
+  padding: 15px;
+}
+.panel_right .news_list p{
+
+}
+/*
+ * Button styling
+ */
+
+
+#alerts.x-button, #alerts.x-button-pressed, #settings.x-button, #settings.x-button-pressed { 
+  background: none !important;
+  border: none !important;
+}
+
+/*
+ * Tabbar icons
+ */
+.profileIcon {
+  background-image:url("../images/footer_icons_profile.png") !important;
+  background-color: transparent !important;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.licencesIcon {
+  background-image:url("../images/footer_icons_licences.png") !important;
+  background-color: transparent !important;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.newsIcon {
+  background-image:url("../images/footer_icons_news.png") !important;
+  background-color: transparent !important;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+.usersaccessIcon {
+  background-image:url("../images/footer_icons_user_access.png") !important;
+  background-color: transparent !important;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+/*
+.x-tab-active .profileIcon { background-position: 0 -100;}
+.x-tab-active .licencesIcon { background-position: 0 -100;}
+.x-tab-active .newsIcon { background-position: 0 -100;}
+.x-tab-active .usersaccessIcon { background-position: 0 -100;}
+*/
+/*
+ * Toolbar & toolbar icons
+ */
+.mainToolbar{
+  background: url("../images/header.png") repeat-x !important;
+}
+
+.ribbon{
+  background:url("../images/ribbon.png") repeat-x !important; 
+}
+
+.mainToolbar #emslogo{
+  height: 42px;
+}
+
+.subToolbar, .bodyToolbar{
+  background:#d3d9dc url("../images/subheader.png") repeat-x !important;
+  /* This is too dark at the moment. Fix!
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.14, rgb(153,153,153)),
+      color-stop(0.57, rgb(204,204,204))
+  ) !important;*/
+  /*border-radius: 5px;  No longer needed? 
+  margin: 2px 1px 0 0; */
+
+}
+
+.leftToolbar, .x-toolbar-dark.leftToolbar{
+  background-image: -webkit-gradient(
+       linear,
+      left bottom,
+      left top,
+      color-stop(0.14, rgb(51,153,204)),
+      color-stop(0.57, rgb(54,194,229))
+  ) !important;
+}
+
+.leftToolbar .x-toolbar-title{
+  color: #fff !important;
+}
+
+.bodyToolbar {
+  text-align: left !important;
+}
+
+.subToolbar .x-toolbar-title, .mainToolbar .x-toolbar-title, .bodyToolbar .x-toolbar-title{
+  color: #666 !important;
+  text-align: left !important;
+  text-shadow: #fff 0 -0.08em 0 !important;
+}
+
+.alertsIcon {
+  background-image:url("../images/alerts.png") !important;
+}
+.settingsIcon {
+  background-image:url("../images/settings.png") !important;
+}
+
+/*
+ * Folder styling (on licences and users/access pages)
+ */
+.folder, .subfolder{
+  font-weight: bold;
+}
+
+.folder {
+  padding: 0 0 6px 35px !important;
+  background: transparent url("../images/folder_icon.png") top left no-repeat !important;
+}
+.folder.member {
+	background-position: 0 -100px !important;
+}
+.subfolder {
+  background: transparent url("../images/subfolder_icon.png") top left no-repeat !important;
+  padding: 0 0 6px 65px !important;
+  margin: 0px 0px 0px 36px;
+}
+.subfolder.member {
+	background-position: 0 -100px !important;	
+}
+
+
+/*  
+ * Licences page styling
+ */
+.licenceRow, .licencesHeader {
+  width: 100%;
+}
+.licences_product, .licences_quantity, .licences_metrics{
+  display: inline-block;
+  font-weight: bold;
+  color: #333;
+}
+
+.licencesHeader{
+  color: #47596a !important;
+}
+
+.licenceRow .licences_product{
+ 
+}
+.licenceRow .licences_quantity, .licences_quantity{
+  width: 25%;
+  float: right;
+  text-align: center;
+  
+}
+.licenceRow .licences_metrics, .licences_metrics{
+  width: 25%;
+  float: right;
+  text-align: center;
+}
+.licenceRow .arrow, .arrow, .licenceRow .arrowSpan {
+	float: right;
+	width: 15px;
+	height: 15px;
+	padding-top: 5px;
+}
+
+.licenceRow .arrowSpan {
+	background: url('../images/licenceRowArrows.png') no-repeat;
+	background-position: 0px 0px;
+	margin-top: 7px;
+}
+.licenceRow.expanded .arrowSpan {
+	background-position: 0px -200px;
+}
+

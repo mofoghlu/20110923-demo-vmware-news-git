@@ -1,0 +1,17 @@
+.mainToolbar #emslogo{
+	height: auto !important; /* Override our width for pad devices */
+	margin-left: 8px;
+	margin-top: -5px;
+}
+
+.x-form-label span {
+	font-size: 0.6em !important;
+}
+
+.x-form-label span, .x-field input {
+	font-size: 0.6em !important;
+}
+
+.newsItem h1 {
+  font-weight: bold;
+}

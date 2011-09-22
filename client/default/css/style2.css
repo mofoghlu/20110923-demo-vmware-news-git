@@ -1,0 +1,193 @@
+/*
+ * Global panel styles
+ */
+.panel_left {
+  background: url("../images/left_bg.png") repeat !important;
+}
+
+/*
+ * css for profile.js
+ */
+
+.panel_right {
+  margin-left:20px;  
+  margin-top :10px;
+  margin-right:40px;
+}
+
+.entPanel{
+  margin-top :142px;
+}
+.listItem {
+  background-color: #EEE;
+  margin-bottom:-5px;
+}
+
+.userDetailList1 {
+  margin-left:15px;  
+  float: left;
+}
+
+.userDetailList2 {
+  margin-right:20px; 
+  float: right;
+}
+
+#userDetailsTab {
+  border: none;
+  width:97%;
+  margin-left:1px; 
+}
+#userDetailsTab1{
+  border: none;
+  width:97%;
+  margin-left:40px; 
+}
+.roundPanel{
+    -webkit-border-radius:10px;
+    border-radius:10px;
+} 
+.txtColor{
+   color:grey;
+}
+
+/* 
+ * Login.js styles
+ */
+#app_form_login .x-form-fieldset-title {
+  color: #fff;
+  text-shadow: none;
+}
+#app_login, #app_form_login {
+  background: url("../images/login_bg.png") center center no-repeat;
+  background-size: 100%;
+}
+#app_form_login .x-panel-body { 
+  background-color: transparent;
+}
+#app_login, #app_login .x-form-fieldset .x-panel-body {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+}
+#app_login_error strong { 
+  color: red;
+}
+#app_login .app_login_title {
+  color: #fff;
+  background: url("../images/login_logo.png") center center no-repeat;
+}
+
+/*
+ * Sencha overrides
+ */
+
+strong {
+  /* Sencha overrides the strong tag */
+  font-weight: bold !important;  
+}
+#panel_profile_details strong {
+  font-weight: bolder !important;
+}
+
+.panel_left .x-list {
+  background-color: transparent !important;
+}
+
+.panel_left .newsSumary, .panel_left .my_profile  {
+  color: #fff !important;
+}
+/*
+ * Button styling
+ */
+
+.x-toggle-off {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(#9c0300), color-stop(0.1, #b50000), color-stop(0.65, #cf0000), to(#d20000)) !important;
+  background-image: linear-gradient(##9c0300,#b50000 10%,#cf0000 65%,#d20000)
+}
+
+
+#alerts.x-button, #alerts.x-button-pressed, #settings.x-button, #settings.x-button-pressed { 
+  background: none !important;
+  border: none !important;
+}
+
+/*
+ * Tabbar icons
+ */
+.profileIcon {
+  background-image:url("../images/footer_icons_profile.png") !important;
+  background-color: transparent !important;
+  background-position: 0 0;
+}
+
+.licencesIcon {
+  background-image:url("../images/footer_icons_licences.png") !important;
+  background-color: transparent !important;
+  background-position: 0 0;
+}
+.newsIcon {
+  background-image:url("../images/footer_icons_news.png") !important;
+  background-color: transparent !important;
+  background-position: 0 0;
+}
+.usersaccessIcon {
+  background-image:url("../images/footer_icons_user_access.png") !important;
+  background-color: transparent !important;
+  background-position: 0 0;
+}
+
+.x-tab-active .profileIcon { background-position: 0 -100;}
+.x-tab-active .licencesIcon { background-position: 0 -100;}
+.x-tab-active .newsIcon { background-position: 0 -100;}
+.x-tab-active .usersaccessIcon { background-position: 0 -100;}
+/*
+ * Toolbar & toolbar icons
+ */
+.mainToolbar{
+  background:url("../images/header.png") repeat-x !important;
+}
+
+.ribbon{
+  background:url("../images/ribbon.png") repeat-x !important; 
+}
+
+.mainToolbar #emslogo{
+  height: 42px;
+}
+
+.subToolbar{
+  background:url("../images/subheader.png") repeat-x !important;
+  border-radius: 5px;
+  margin: 2px 1px 0 0;
+
+}
+
+.leftToolbar, .x-toolbar-dark.leftToolbar, .x-toolbar-dark{
+  background: url("../images/toolbar_blue.png") repeat-x;
+}
+
+.leftToolbar .x-toolbar-title{
+  color: #fff !important;
+}
+
+.subToolbar .x-toolbar-title, .mainToolbar .x-toolbar-title{
+  color: #666 !important;
+  text-shadow: #fff 0 -0.08em 0 !important;
+}
+
+.alertsIcon {
+  background-image:url("../images/alerts.png") !important;
+}
+.settingsIcon {
+  background-image:url("../images/settings.png") !important;
+}
+
+/*
+ * Folder styling
+ */
+
+.licence_folder {
+  padding: 0 0 0 35px !important;
+  background: #ededed url("../images/folder_icon.png") top left no-repeat !important;
+  font-weight: bold;
+}
